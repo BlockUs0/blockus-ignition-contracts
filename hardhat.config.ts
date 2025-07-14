@@ -53,7 +53,12 @@ const config: HardhatUserConfig = {
       url: "https://bsc-dataseed.binance.org/",
       chainId: 56,
       accounts: [ process.env.DEPLOYER_PRIVATE_KEY!, process.env.TEST_PRIVATE_KEY! ],
-    }
+    },
+    sei: {
+      url: "https://evm-rpc.sei-apis.com",
+      accounts: [process.env.DEPLOYER_PRIVATE_KEY!, process.env.TEST_PRIVATE_KEY!],
+      chainId: 1329,
+    },
   },
   etherscan: {
     apiKey: {
