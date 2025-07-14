@@ -68,6 +68,7 @@ const config: HardhatUserConfig = {
       bsc:process.env.ETHERSCAN_API_KEY!,
       b3:'as',
       sonemium:'as',
+      sei: 'db766fd4-ea50-4f8c-8cc2-28ec882ea790',
     },
     customChains: [
       {
@@ -84,6 +85,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://soneium.blockscout.com/api",
           browserURL: "https://soneium.blockscout.com/",
+        },
+      },
+      {
+        network: "sei",
+        chainId: 1329,
+        urls: {
+          apiURL: "https://seitrace.com/pacific-1/ap",
+          browserURL: "https://seitrace.com/pacific-1",
         },
       },
     ]
